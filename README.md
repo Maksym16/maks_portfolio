@@ -1,7 +1,3 @@
-# Steam Portfolio
-
-A developer portfolio inspired by [steam-portfolio-demo.vercel.app](https://steam-portfolio-demo.vercel.app/), built with **React + Vite**.
-
 ## Features
 
 - Anime.js interactive dot grid on the hero
