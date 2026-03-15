@@ -70,7 +70,7 @@ export const PROJECTS = [
     desc:  "An e-commerce shop powered by the CMS Dashboard. Built with Next.js and TypeScript, featuring a clean storefront UI with full product browsing and checkout flow.",
     image:  coffeeImg,
     github: "https://github.com/Maksym16/shop",
-    live:   "https://ecommercestore-fawn.vercel.app",
+    live:   "https://roastery.vercel.app",
     details: {
       fullDesc: "A full-stack e-commerce storefront for a coffee shop, built with Next.js 14 App Router. The store is powered by a custom headless CMS/admin dashboard and includes product browsing, filtering, cart management, and Stripe checkout.",
       stack: [
@@ -107,6 +107,7 @@ export const PROJECTS = [
   },
   {
     title: "SkyGear",
+    badge: "Under Development",
     tech:  "MongoDB - Express - React - Node.js - Redux Toolkit",
     desc:  "A fully functional MERN stack e-commerce shop for selling drones. Features product reviews, search, pagination, user profiles, order tracking, and PayPal/credit card payments.",
     image:  skyGearImg,

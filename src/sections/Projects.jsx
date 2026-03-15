@@ -76,14 +76,16 @@ function ProjectModal({ project, onClose }) {
               </svg>
               GitHub
             </a>
-            <a href={project.live} target="_blank" rel="nofollow noreferrer" className="modal-link">
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
-                viewBox="0 0 1024 1024" height="1.4rem" width="1.4rem"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d={EXTERNAL_PATH} />
-              </svg>
-              Live
-            </a>
+            {!project.badge && (
+              <a href={project.live} target="_blank" rel="nofollow noreferrer" className="modal-link">
+                <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
+                  viewBox="0 0 1024 1024" height="1.4rem" width="1.4rem"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d={EXTERNAL_PATH} />
+                </svg>
+                Live
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -137,6 +139,7 @@ function ProjectItem({ project, index, onOpenModal }) {
         <WipeReveal fullWidth>
           <div className="project-title-row">
             <h4>{project.title}</h4>
+            {project.badge && <span className="project-badge">{project.badge}</span>}
             <div className="project-title-line" />
             <a
               href={project.github}
@@ -150,18 +153,20 @@ function ProjectItem({ project, index, onOpenModal }) {
                 <path d={GITHUB_PATH} />
               </svg>
             </a>
-            <a
-              href={project.live}
-              target="_blank"
-              rel="nofollow noreferrer"
-              className="icon-link"
-            >
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
-                viewBox="0 0 1024 1024" height="1.6rem" width="1.6rem"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d={EXTERNAL_PATH} />
-              </svg>
-            </a>
+            {!project.badge && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="nofollow noreferrer"
+                className="icon-link"
+              >
+                <svg stroke="currentColor" fill="currentColor" strokeWidth="0"
+                  viewBox="0 0 1024 1024" height="1.6rem" width="1.6rem"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d={EXTERNAL_PATH} />
+                </svg>
+              </a>
+            )}
           </div>
         </WipeReveal>
 
