@@ -1,6 +1,7 @@
 import cmsImg from "./Project_1-Content_management_system.png";
 import coffeeImg from "./Project_2-Coffee_Shop.png";
 import skyGearImg from "./Project_3-SkyGear.png";
+import burzhuyka from "./Project_4-Burzhuyka.png";
 
 // ─── Theme ────────────────────────────────────────────────────────────────────
 export const BRAND   = "#26D0CE";
@@ -113,6 +114,48 @@ export const PROJECTS = [
     image:  skyGearImg,
     github: "https://github.com/Maksym16/SkyGear",
     live:   "https://skygear.onrender.com",
+  },
+  {
+    title: "Буржуйка",
+    tech:  "React - Vite - TailwindCSS - React Router - TanStack Query - GSAP - Node.js - Express - PostgreSQL - Cloudinary - JWT",
+    desc:  "Full-stack business website built for a real client — a fireplace & sauna stove sales and installation company based in Kyiv, Ukraine. Features an animated public storefront, filterable product catalog, lightbox gallery, and a JWT-protected admin dashboard.",
+    image:  burzhuyka,
+    github: "https://github.com/Maksym16/burzhuyka",
+    live:   "https://burzhuyka.com/",
+    details: {
+      fullDesc: "A full-stack business website for a fireplace and sauna stove sales and installation company based in Kyiv, Ukraine. Built to cover both the customer-facing storefront and a complete back-office admin panel — from product and gallery management to SEO and structured data.",
+      stack: [
+        ["Frontend",    "React 18, Vite"],
+        ["Styling",     "Tailwind CSS"],
+        ["Routing",     "React Router v6"],
+        ["Data",        "TanStack React Query"],
+        ["Animations",  "GSAP + ScrollTrigger"],
+        ["Forms",       "React Hook Form"],
+        ["Backend",     "Node.js + Express"],
+        ["Database",    "Neon Serverless PostgreSQL"],
+        ["Media",       "Cloudinary"],
+        ["Auth",        "JWT"],
+        ["Uploads",     "Multer"],
+        ["Deployment",  "Hostinger Managed Node.js"],
+      ],
+      features: [
+        "Animated hero carousel, services section, gallery preview, and product catalog categories on the home page",
+        "Product catalog — filterable by category with individual detail pages at /catalog/:slug",
+        "Full-page photo gallery with lightbox, arrow navigation, and keyboard support",
+        "Contacts page with phone numbers, Telegram, Viber, and location info",
+        "Fully responsive — mobile hamburger menu and adaptive layouts throughout",
+        "Admin dashboard (/admin, JWT protected) — create, edit, delete products with multi-image Cloudinary upload",
+        "Gallery management — bulk image upload, delete synced between Cloudinary and the database",
+        "Product list with live search, column sorting, and pagination",
+        "SEO — meta tags, Open Graph, JSON-LD LocalBusiness structured data",
+      ],
+      architecture: [
+        "SPA with Express server-side fallback for direct URL access in production",
+        "Cloudinary public_id tracking ensures clean deletes with no orphaned files",
+        "REST API served by Express; frontend built by Vite into backend/dist/",
+        "postinstall script installs backend dependencies automatically on each deploy",
+      ],
+    },
   },
 ];
 
