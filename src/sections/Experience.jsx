@@ -12,7 +12,11 @@ function ExperienceItem({ job }) {
       {/* Company + period */}
       <div className="exp-heading-row">
         <WipeReveal>
-          <span className="exp-title">{job.company}</span>
+          {job.companyUrl ? (
+            <a className="exp-title" href={job.companyUrl} target="_blank" rel="noopener noreferrer">{job.company}</a>
+          ) : (
+            <span className="exp-title">{job.company}</span>
+          )}
         </WipeReveal>
         <WipeReveal>
           <span className="exp-period">{job.period}</span>

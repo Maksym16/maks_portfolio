@@ -107,15 +107,6 @@ export const PROJECTS = [
     },
   },
   {
-    title: "SkyGear",
-    badge: "Under Development",
-    tech:  "MongoDB - Express - React - Node.js - Redux Toolkit",
-    desc:  "A fully functional MERN stack e-commerce shop for selling drones. Features product reviews, search, pagination, user profiles, order tracking, and PayPal/credit card payments.",
-    image:  skyGearImg,
-    github: "https://github.com/Maksym16/SkyGear",
-    live:   "https://skygear.onrender.com",
-  },
-  {
     title: "Буржуйка",
     tech:  "React - Vite - TailwindCSS - React Router - TanStack Query - GSAP - Node.js - Express - PostgreSQL - Cloudinary - JWT",
     desc:  "Full-stack business website built for a real client — a fireplace & sauna stove sales and installation company based in Kyiv, Ukraine. Features an animated public storefront, filterable product catalog, lightbox gallery, and a JWT-protected admin dashboard.",
@@ -157,12 +148,22 @@ export const PROJECTS = [
       ],
     },
   },
+  {
+    title: "SkyGear",
+    badge: "Under Development",
+    tech:  "MongoDB - Express - React - Node.js - Redux Toolkit",
+    desc:  "A fully functional MERN stack e-commerce shop for selling drones. Features product reviews, search, pagination, user profiles, order tracking, and PayPal/credit card payments.",
+    image:  skyGearImg,
+    github: "https://github.com/Maksym16/SkyGear",
+    live:   "https://skygear.onrender.com",
+  },
 ];
 
 // ─── Experience ───────────────────────────────────────────────────────────────
 export const EXPERIENCE = [
   {
     company:  "BrandingBrand",
+    companyUrl: "https://brandingbrand.com/",
     period:   "06/2021 - Present",
     role:     "Software Engineer ||",
     location: "Pittsburgh, PA",
@@ -171,6 +172,7 @@ export const EXPERIENCE = [
   },
   {
     company:  "Leadership Connect",
+    companyUrl: "https://leadershipconnect.io/",
     period:   "12/2019 - 06/2021",
     role:     "Software Engineer",
     location: "New York, NY",
